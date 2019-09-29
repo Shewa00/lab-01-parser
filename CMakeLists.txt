@@ -57,7 +57,23 @@ target_include_directories(prices
             nlohmann_json::nlohmann_json
         )
 # TODO: change template word to project name and delete this comment
-target_link_libraries(tests gtest gtest_main lab-01-parser nlohmann_json::nlohmann_json)
+find_library(
+        GTEST_LOCAL_LIB
+        NAMES gtest
+        PATHS ${PROJECT_NAME}/lib64/
+)
+find_library(
+        GTEST_LOCAL_LIB_MAIN
+        NAMES gtest_main
+        PATHS ${PROJECT_NAME}/lib64/
+)
+target_link_libraries(
+        tests
+        ${CMAKE_THREAD_LIBS_INIT}
+        ${GTEST_LOCAL_LIB}
+        ${GTEST_LOCAL_LIB_MAIN}
+        ${PROJECT_NAME}
+)
 target_link_libraries(prices
         PUBLIC
         nlohmann_json::nlohmann_json
