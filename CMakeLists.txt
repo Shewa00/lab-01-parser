@@ -72,7 +72,7 @@ target_link_libraries(
         ${CMAKE_THREAD_LIBS_INIT}
         ${GTEST_LOCAL_LIB}
         ${GTEST_LOCAL_LIB_MAIN}
-        ${PROJECT_NAME}
+        lab-01-parser nlohmann_json::nlohmann_json
 )
 target_link_libraries(prices
         PUBLIC
