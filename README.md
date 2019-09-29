@@ -1,3 +1,5 @@
+
+
 # Задание 1
 Реализовать парсер данных в формате JSON.
 
@@ -107,3 +109,7 @@ target_link_libraries(main json)
 ```
 
 Для этого требуется использовать любую популярную библиотеку для работы с форматом данных JSON на C++ (например [JSON for Modern C++](https://docs.hunter.sh/en/latest/packages/pkg/nlohmann_json.html)).
+
+# Результат
+
+
