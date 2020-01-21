@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/nothingholy/lab-01-parser.svg?branch=master)](https://travis-ci.org/nothingholy/lab-01-parser) [![forthebadge](https://forthebadge.com/images/badges/60-percent-of-the-time-works-every-time.svg)](https://forthebadge.com) ![GitHub repo size](https://img.shields.io/github/repo-size/nothingholy/lab-01-parser) ![nothingholy](https://img.shields.io/badge/nothing-holy-red)
+
 
 # Задание 1
 Реализовать парсер данных в формате JSON.
